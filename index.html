@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+<title>shapes</title>
+</head>
+<body>
+<div style="border:1px solid black; height:50px; width:500px; text-align:center;">
+  <span class="span">Circles =  </span>
+  <span class="span" id="circles">0</span>
+  <span class="span">|</span>
+  <span class="span">Squares = </span>
+  <span class="span" id="squares">0</span>
+  
+</div>
+<canvas id="canvas" height="400" width="500" style="border: 3px solid red; " ></canvas>
+
+<br />
+<button onClick="drawCircle(); circleClick(1);" class="button">Draw a Circle</button>
+<button onClick="drawSquare(); squareClick(1);" class="button">Draw a Square</button>
+<button onClick="clearCanvas(ctx, canvas);" class="button">Reset Game</button>
+</body>
+</html>
